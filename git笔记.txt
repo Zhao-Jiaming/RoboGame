@@ -1,0 +1,29 @@
+git -v 查看电脑中git的版本
+git config --global user.name "Zhao Jiaming"  初始化用户名
+git config --global user.email zjm@mail.ustc.edu.cn  初始化邮箱
+git config --global credential.helper store 保存账号密码
+git config --global --list 查看配置信息
+dir    查看文件列表
+dir /a 查看包含隐藏文件在内的所有文件
+cd ..  返回上一级目录
+git status 查看仓库的状态
+type git笔记.txt  读取文件内容
+git add git笔记.txt  将指定文件加入到暂存区
+git add *.txt    将所有txt文件加入到暂存区
+git add .    将目录下所有文件加入到暂存区
+git commit -m "第一次提交"  将暂存区的内容上传到本地仓库
+git log    查看提交历史信息
+git log --oneline  查看简洁的提交历史信息
+git reset --soft version  保留工作区和暂存区
+git reset --hard version  删除工作区和暂存区
+git reset --mixed version (默认模式)保留工作区，删除暂存区
+git reflog  查看操作的历史记录，如果有误操作的话可以使用git reset --hard version回退到之前的版本
+git diff    比较工作区和暂存区之间的差异
+git diff HEAD  比较工作区和版本库之间的差异
+git diff --cached  比较暂存区和版本库之间的差异
+git diff version1 version2  比较version1和version2之间的差异
+git diff version1 version2 filename  只比较两版本间特定文件的差异
+git diff HEAD~ HEAD     比较上一个版本和当前版本之间的差异
+git rm filename        将文件从工作区和暂存区同时删除
+git rm --cached filename  将文件从暂存区删除，但保留在当前工作区中
+
